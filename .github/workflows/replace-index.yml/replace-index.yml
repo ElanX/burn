@@ -1,0 +1,22 @@
+name: Replace index with MarketHeat
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  replace:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Replace index.html with marketheat.html
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ ! -f marketheat.html ]; then exit 0; fi
+          git rm -q index.html
+          git mv marketheat.html index.html
+          git commit -m "Update MarketHeat"
+          git push
