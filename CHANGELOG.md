@@ -2,6 +2,13 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## Nov 9, 2026 · stamp 20261109T230000Z
+- The Within % control is a dropdown now (1%, 3%, 5%, 10%, 20%, 50%); no more fighting a text field that reformatted while typing.
+- Every stats pill is a filter: tap new highs, new lows, near highs, or near lows to filter the map to just those tiles. Counts always describe the full set, filters stack with the up/down filter, and tapping the total pill clears everything. Near buttons come before the new-extremes button, which always carries a 🏆 and shrinks to 🏆 plus a total count when space is tight.
+- The map heading is one line: index flag or name, the pills, the period as a short code (1D, 1D EXT, 1D COM), and the full-screen button. All US listings shows as 🇺🇸. Wordy text removed: no grouping caption, no "USD", no descriptive notes in the Appearance panel.
+- Controls take less room, so more map shows on load (about 87px more at phone width): shorter dropdown labels (Sector, Gradient, Mkt cap, From 52W high), the view dropdowns share one row, session buttons read Reg / Ext / Com on small screens, the All US dropdown moved into the Filters/Appearance row, session buttons hide when the period is not 1D, and row spacing is tighter.
+- On narrow screens: the Solo/Duo toggle hides (Duo comes back on wider screens), the "by @ELAN" byline hides, and the NAS 100 header cell hides unless Nasdaq 100 is the selected index.
+
 ## Nov 9, 2026 · stamp 20261109T150000Z
 - 52-week marks are now session-gated: on a trading day they only ever describe that day's session, and only once it opens. Before the bell, the previous session's marks no longer show (this morning's map would have carried Friday's extremes into Monday). On weekends and holidays the last session's marks stay visible, and the detail tag names the day ("New 52W low Fri") instead of saying "today".
 - Detail panel gains Session low / Session high rows, dated when they are not from today, so the number behind a mark is right there to check.
