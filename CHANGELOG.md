@@ -2,6 +2,10 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 9, 2026 · build 20261110T100000Z
+
+- SpaceX (SPCX) now uses the official SpaceX X logo in white on black, drawn large so it stays recognizable on small tiles.
+- Industry emoji updates: Semiconductors now 🖲️, Electronic Components 🔩, Natural Gas Distribution ⛽. The fire emoji no longer marks any group.
 ## November 9, 2026 · build 20261110T090000Z
 
 - Tiles never show a % move by itself anymore: the ticker outlasts the %, and wide flat tiles put logo, ticker, and % on one line.
