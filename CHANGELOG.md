@@ -2,6 +2,11 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## Nov 9, 2026 · stamp 20261109T150000Z
+- 52-week marks are now session-gated: on a trading day they only ever describe that day's session, and only once it opens. Before the bell, the previous session's marks no longer show (this morning's map would have carried Friday's extremes into Monday). On weekends and holidays the last session's marks stay visible, and the detail tag names the day ("New 52W low Fri") instead of saying "today".
+- Detail panel gains Session low / Session high rows, dated when they are not from today, so the number behind a mark is right there to check.
+- New proximity marks (off by default): a "Near 52W high/low" toggle with an adjustable "Within %" (default 1%) in the marks group. Stocks within the threshold of their 52-week high or low get a border only (never glow), outline count pills in the stats line, and a detail tag with the exact distance ("Within 0.4% of 52W high"). A true new extreme always wins over proximity. Open question: whether proximity should be exclusive with the new-extreme marks (one or the other) rather than stacking.
+
 ## Nov 7, 2026 · stamp 20261109T023000Z · bd71e00
 - 52-week marks get their own colors: "New high color" and "New low color" pickers in the marks group (defaults fluorescent green #2BFF5E and fire truck red #FF2A1E), driving tile borders and glow, the stats-line count pills, and the detail panel tag.
 - Appearance dock reorganized: most-used controls on top (Map size + Color by, then Full color at + Grey within). No control sits alone on a full-width row; % move cap pairs with Tile text just above the themes.
