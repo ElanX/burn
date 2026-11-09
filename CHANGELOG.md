@@ -2,6 +2,11 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## Nov 9, 2026 · stamp 20261110T040000Z
+- Quick Moves gains a ±0.5%+ option (All moves, ±0.5%+, ±1%+, ±2%+, ±5%+).
+- The index dropdown's All US option now reads "🇺🇸 All US".
+- New starting defaults: 52-week marks glow starts at Inner, and Near 52W starts on with Within at 5%. Settings you already saved on a device are unchanged.
+
 ## Nov 9, 2026 · stamp 20261110T030000Z
 - The ~ on the near filter button is sized up to match the trophy, so the two buttons read as a pair.
 - Dropdown text is centered in every closed dropdown.
