@@ -2,6 +2,12 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## Nov 9, 2026 · stamp 20261110T010000Z
+- Marks filter buttons are always combined, at every screen width: one near button (~ counts) and one trophy button (new highs/lows counts). The four separate pills are gone. Filters saved as a single side (near highs only, for example) load converted to the combined filter.
+- Control rows stretch to the full width evenly: no more blank space trailing off on the right of the control groups, on wide screens or phones.
+- NAS 100 in the header no longer hides at a fixed screen width. It hides only when the header row genuinely overflows, so it stays visible on the folded phone; it never hides while Nasdaq 100 is the selected index.
+- The brand strip now appears only on the Duo unfolded in portrait, which is the one pose it protects. It no longer appears when the phone is folded; there the brand sits on the header row like everywhere else.
+
 ## Nov 9, 2026 · stamp 20261109T230000Z
 - The Within % control is a dropdown now (1%, 3%, 5%, 10%, 20%, 50%); no more fighting a text field that reformatted while typing.
 - Every stats pill is a filter: tap new highs, new lows, near highs, or near lows to filter the map to just those tiles. Counts always describe the full set, filters stack with the up/down filter, and tapping the total pill clears everything. Near buttons come before the new-extremes button, which always carries a 🏆 and shrinks to 🏆 plus a total count when space is tight.
