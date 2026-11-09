@@ -2,6 +2,11 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## Nov 9, 2026 · stamp 20261110T030000Z
+- The ~ on the near filter button is sized up to match the trophy, so the two buttons read as a pair.
+- Dropdown text is centered in every closed dropdown.
+- The header fits on one row when there is room: on the folded phone, the brand, the three index cells, and the share and refresh buttons share a single row instead of the buttons dropping to their own line. On narrow phones that cannot fit it, the buttons keep their own row.
+
 ## Nov 9, 2026 · stamp 20261110T010000Z
 - Marks filter buttons are always combined, at every screen width: one near button (~ counts) and one trophy button (new highs/lows counts). The four separate pills are gone. Filters saved as a single side (near highs only, for example) load converted to the combined filter.
 - Control rows stretch to the full width evenly: no more blank space trailing off on the right of the control groups, on wide screens or phones.
