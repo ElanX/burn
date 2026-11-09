@@ -2,6 +2,17 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 9, 2026 · build 20261110T090000Z
+
+- Tiles never show a % move by itself anymore: the ticker outlasts the %, and wide flat tiles put logo, ticker, and % on one line.
+- Treemap layout caps tile shapes at about 4:1, so tall unreadable slivers get readable width from their neighbors; group totals and areas are unchanged.
+- New Appearance option: a Price tile toggle (off by default) that shows the stock price under the ticker on tiles with room for it.
+- Sector and industry group headers now start with an emoji. Industries without a good match stay plain.
+- The near 52W high/low filter pill now shows the Within % it filters by, and updates live when the setting changes.
+- SpaceX has a new logo, a big white X on black. The Apple, Tesla, and Nvidia logos are recentered in their circles.
+- On desktop, the fill button now fills the browser window instead of taking over the whole monitor.
+- Starting defaults: marks glow set to Inner, Near 52W marks on with Within 3%, marks border 1px.
+- Control dropdowns line up evenly with the other controls; labels now read Price × Vol, % Move, and All Moves.
 ## Nov 9, 2026 · stamp 20261110T040000Z
 - Quick Moves gains a ±0.5%+ option (All moves, ±0.5%+, ±1%+, ±2%+, ±5%+).
 - The index dropdown's All US option now reads "🇺🇸 All US".
