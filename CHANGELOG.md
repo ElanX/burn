@@ -2,6 +2,11 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T240000Z
+
+- Loads are instant now: every open paints immediately from the newest quotes saved on the device, whatever their age, then fresh quotes update the map in place. No more black, empty map while waiting.
+- The 52-week highlights, tile borders, and the near/trophy pills are there from the first paint on a same-day reload, using today's saved 52-week baseline until the live pull confirms it. A previous day's baseline is never reused.
+
 ## November 10, 2026 · build 20261110T230000Z
 
 - Fixed the near and new-extreme pills and tile borders going missing on loads served from the 5-minute quote cache: those loads now also pull the 52-week baseline so the marks can be judged, instead of waiting for the next full refresh.
