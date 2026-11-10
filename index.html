@@ -1,5 +1,92 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0b0b0d"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="build-stamp" content="20261110T370000Z"><!-- build-stamp: bump to a new unique value on every publish; the self-update check below compares this against the live copy --><title>$tockBurn · Stocks on fire</title><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27f%27%20x1%3D%270%27%20y1%3D%271%27%20x2%3D%270%27%20y2%3D%270%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%23e63b12%27%2F%3E%3Cstop%20offset%3D%27.55%27%20stop-color%3D%27%23ff7a1a%27%2F%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%23ffc21f%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%230b0b0d%27%2F%3E%3Cg%20transform%3D%27translate%281.2%203.6%29%20scale%281.4%29%27%3E%3Cpath%20fill%3D%27url%28%23f%29%27%20d%3D%27M22%201.5c1.6%205.8%207.1%209%209.7%2013.8%201.8%203.2%202.8%206.6%202.8%2010.2A12.5%2012.5%200%201%201%209.5%2025.5c0-3.3%201-6.5%202.7-9.5%201.2%201.8%202.5%203%204.2%203.9C15.6%2013.7%2018.3%206.6%2022%201.5z%27%2F%3E%3Cpath%20fill%3D%27%23ffb01f%27%20d%3D%27M22%2014.5c1%203.6%204.2%205.7%205.8%208.5%201%201.8%201.5%203.6%201.5%205.5A7.3%207.3%200%201%201%2014.7%2028.5c0-1.8.5-3.5%201.4-5.2.8%201.1%201.8%201.9%202.9%202.5-.5-4.1.7-8.3%203-11.3z%27%2F%3E%3Ctext%20x%3D%2722%27%20y%3D%2736.5%27%20text-anchor%3D%27middle%27%20font-family%3D%27Arial%2CHelvetica%2Csans-serif%27%20font-size%3D%2722%27%20font-weight%3D%27800%27%20fill%3D%27%2340190a%27%3E%24%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E"><link rel="apple-touch-icon" href="https://elanx.github.io/burn/apple-touch-icon.png">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0b0b0d"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="build-stamp" content="20261110T390000Z"><!-- build-stamp: bump to a new unique value on every publish; the self-update check below compares this against the live copy --><title>$tockBurn · Stocks on fire</title><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27f%27%20x1%3D%270%27%20y1%3D%271%27%20x2%3D%270%27%20y2%3D%270%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%23e63b12%27%2F%3E%3Cstop%20offset%3D%27.55%27%20stop-color%3D%27%23ff7a1a%27%2F%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%23ffc21f%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%230b0b0d%27%2F%3E%3Cg%20transform%3D%27translate%281.2%203.6%29%20scale%281.4%29%27%3E%3Cpath%20fill%3D%27url%28%23f%29%27%20d%3D%27M22%201.5c1.6%205.8%207.1%209%209.7%2013.8%201.8%203.2%202.8%206.6%202.8%2010.2A12.5%2012.5%200%201%201%209.5%2025.5c0-3.3%201-6.5%202.7-9.5%201.2%201.8%202.5%203%204.2%203.9C15.6%2013.7%2018.3%206.6%2022%201.5z%27%2F%3E%3Cpath%20fill%3D%27%23ffb01f%27%20d%3D%27M22%2014.5c1%203.6%204.2%205.7%205.8%208.5%201%201.8%201.5%203.6%201.5%205.5A7.3%207.3%200%201%201%2014.7%2028.5c0-1.8.5-3.5%201.4-5.2.8%201.1%201.8%201.9%202.9%202.5-.5-4.1.7-8.3%203-11.3z%27%2F%3E%3Ctext%20x%3D%2722%27%20y%3D%2736.5%27%20text-anchor%3D%27middle%27%20font-family%3D%27Arial%2CHelvetica%2Csans-serif%27%20font-size%3D%2722%27%20font-weight%3D%27800%27%20fill%3D%27%2340190a%27%3E%24%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E"><link rel="apple-touch-icon" href="https://elanx.github.io/burn/apple-touch-icon.png">
+<script>
+/* Head boot guardian (20261110T380000Z): this script sits in the first ~2KB
+   of the document, ahead of everything else. It exists because the two
+   failure launches of 20261110T370000Z stalled at two different points of
+   this single 3.4MB document: one died inside the embedded-data region
+   (the early geometry boot had applied the saved settings, but the main
+   script at the very end never arrived, so no control ever got a handler),
+   and one died BEFORE the early geometry boot (controls still showed raw
+   markup defaults, the marks pills were still hidden, and the status line
+   below the map, which is parsed after that script, never appeared). The
+   T370000Z boot watchdog could not save either launch: it lives inside the
+   early-boot script itself, and its failure message is written into page
+   elements that do not exist when the stall is early, so the page sat
+   painted, wrong-sized and dead with no reload and no explanation.
+   The guardian therefore owns boot recovery end to end:
+   (1) window.__sbAutoReload is the ONE reload path shared by every
+       recovery mechanism (this guardian, the early-boot watchdog, the
+       stuck-viewport recovery). It spends from a single sessionStorage
+       budget of 2 automatic reloads per session per build, so mechanisms
+       can never chain into a reload loop; if storage is unavailable it
+       refuses to reload at all (fail safe, no loop).
+   (2) window.__sbShowBootFail renders its own full-screen message with a
+       working Reload button (which resets the budget), creating the DOM
+       itself instead of writing into page elements that may never have
+       been parsed.
+   (3) Timers at 12s and 24s spend the budget while __sbBooted is missing;
+       at 36s the failure message shows. A healthy boot clears the budget
+       at 6s so a later hang in the same session can still recover. */
+(function(){
+'use strict';
+function stamp(){try{var bm=document.querySelector('meta[name="build-stamp"]');return bm?(bm.getAttribute('content')||''):'';}catch(e){return '';}}
+function budgetKey(){return 'sbAutoReloads.'+stamp();}
+window.__sbBootErr='';
+try{window.addEventListener('error',function(e){if(!window.__sbBootErr&&e&&e.message)window.__sbBootErr=String(e.message);},true);}catch(e){}
+window.__sbAutoReload=function(){
+try{
+if(!window.sessionStorage)return false;
+var k=budgetKey(),n=0;
+try{n=parseInt(sessionStorage.getItem(k)||'0',10)||0;}catch(e){return false;}
+if(n>=2)return false;
+sessionStorage.setItem(k,String(n+1));
+}catch(e){return false;}
+try{window.location.reload();}catch(e){}
+return true;
+};
+window.__sbShowBootFail=function(){
+try{
+if(window.__sbBooted)return;
+if(document.getElementById('sbBootFail'))return;
+var host=document.body||document.documentElement;
+if(!host)return;
+var box=document.createElement('div');
+box.id='sbBootFail';
+box.setAttribute('role','alert');
+box.style.cssText='position:fixed;inset:0;z-index:2147483647;display:flex;align-items:center;justify-content:center;background:rgba(5,5,8,.94);color:#f4f4f6;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:24px;text-align:center;';
+var inner=document.createElement('div');
+inner.style.cssText='max-width:420px;';
+var p=document.createElement('p');
+p.style.cssText='font-size:17px;line-height:1.45;margin:0 0 8px;';
+p.textContent='The app did not finish loading on this device.';
+inner.appendChild(p);
+if(window.__sbBootErr){
+var pe=document.createElement('p');
+pe.style.cssText='font-size:13px;line-height:1.4;margin:0 0 8px;color:#b9b9c2;';
+pe.textContent=String(window.__sbBootErr);
+inner.appendChild(pe);
+}
+var ps=document.createElement('p');
+ps.style.cssText='font-size:13px;line-height:1.4;margin:0 0 18px;color:#b9b9c2;';
+ps.textContent='Your saved settings are kept on this device. Tap Reload to try again.';
+inner.appendChild(ps);
+var b=document.createElement('button');
+b.type='button';
+b.textContent='Reload';
+b.style.cssText='background:#ff7a1a;color:#1c0f02;border:0;border-radius:10px;padding:13px 30px;font-size:16px;font-weight:700;cursor:pointer;';
+b.addEventListener('click',function(){try{if(window.sessionStorage)sessionStorage.removeItem(budgetKey());}catch(e){}try{window.location.reload();}catch(e){}});
+inner.appendChild(b);
+box.appendChild(inner);
+host.appendChild(box);
+}catch(e){}
+};
+setTimeout(function(){if(window.__sbBooted){try{if(window.sessionStorage)sessionStorage.removeItem(budgetKey());}catch(e){}}},6000);
+setTimeout(function(){if(!window.__sbBooted)window.__sbAutoReload();},12000);
+setTimeout(function(){if(!window.__sbBooted&&!window.__sbAutoReload())window.__sbShowBootFail();},24000);
+setTimeout(function(){if(!window.__sbBooted)window.__sbShowBootFail();},36000);
+})();
+</script>
 <style>
 :root{color-scheme:dark;--bg:#050505;--panel:#111113;--line:#29292e;--text:#f2f2f6;--muted:#96969f;--accent:#ff7a1a}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px;-webkit-font-smoothing:antialiased}button,input,select{font:inherit}button,select{cursor:pointer}button{border:1px solid var(--line);color:var(--text);background:var(--panel);border-radius:12px;min-height:44px;padding:10px 14px}button:hover{border-color:#62626b}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:3px}button:disabled{opacity:.45;cursor:wait}button.primary{background:var(--accent);color:#1d0f02;border-color:transparent;font-weight:700}button.ghost{background:transparent}button svg{width:18px;height:18px;vertical-align:-4px;margin-right:6px}.wrap{max-width:1640px;margin:auto;padding:16px 28px calc(30px + env(safe-area-inset-bottom))}header{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;gap:3px;align-items:center;flex:none}.brand-logo{width:31px;height:44px;flex:none;filter:drop-shadow(0 2px 8px rgba(255,106,0,.5))}.brand-text{display:flex;flex-direction:column;transform:translateY(4px)}.brand-line{white-space:nowrap;line-height:1}.brand .wm{background:linear-gradient(180deg,#ffe259,#ff9a2e 52%,#ff5e1a 80%,#e63b12);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:750;letter-spacing:-.7px;font-size:25px}.brand .wm-dollar{font-size:37px}.brand .byline{font-size:12px;font-weight:550;color:#c7bcb0;letter-spacing:.2px;white-space:nowrap;margin-left:6px}.brand .byline b{color:#ff9a3c;font-weight:700}.brand .tagline{font-size:10px;letter-spacing:1.7px;color:#ff9a3c;font-weight:650;line-height:1.25;margin-top:2px;margin-left:24px;white-space:nowrap}.actions{display:flex;gap:8px}.intro{margin:9px 0 0;display:flex;align-items:center;justify-content:space-between;gap:14px}h1{font-size:clamp(26px,3vw,38px);font-weight:600;letter-spacing:-1.4px;margin:0 0 8px}.muted{color:var(--muted)}.snapshot{font-size:12px;line-height:1.6}.dot{display:inline-block;width:6px;height:6px;background:#ff7a1a;border-radius:50%;margin-right:6px}.universes{display:flex;gap:7px;overflow:auto;scrollbar-width:none;padding-bottom:3px}.chip{white-space:nowrap;border-radius:99px;padding:8px 15px;min-height:40px;font-size:13px}.chip.active{background:#ffdfba;color:#241203;border-color:#ffdfba;font-weight:650}.toolbar{margin-top:10px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.toolbar-left,.toolbar-right{display:flex;align-items:center;gap:8px}.segmented{display:flex;padding:3px;border:1px solid var(--line);border-radius:12px;background:#101012}.segmented button{min-height:36px;padding:6px 12px;border:0;border-radius:8px;background:transparent;color:var(--muted);font-size:12px}.segmented button.active{background:#323039;color:white}.toolbar label{font-size:11px;color:var(--muted);margin-right:2px}.switchline{display:flex;align-items:center;gap:8px;font-size:12px}.switchline input{accent-color:var(--accent);width:17px;height:17px}input[type=range]{accent-color:var(--accent)}.field input[type=range]{height:30px;background:transparent;border:0;padding:0}.stats{display:flex;align-items:center;gap:18px;margin:12px 0 4px;font-size:12px}.stats strong{font-size:20px;font-weight:650;letter-spacing:-.8px;margin-right:5px}.gain{color:#79dda8}.loss{color:#ff8c9b}.move-up{color:#2bff5e}.move-down{color:#ff2a1e}.move-flat{color:#96969f}.applied{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}.tag{color:#f2c184;background:#201407;border:1px solid #453014;border-radius:6px;padding:5px 8px;font-size:11px}.map-shell{position:relative;background:#000;border:1px solid #202024;border-radius:14px;overflow:hidden}.map-heading{padding:11px 17px;display:flex;justify-content:space-between;gap:12px;align-items:center;border-bottom:1px solid #202024}.map-heading strong{font-size:13px;font-weight:650}.map-heading span{font-size:11px;color:var(--muted)}#mapCanvas{display:block;width:100%;touch-action:pan-y;cursor:pointer;transform-origin:0 0}.map-footer{display:flex;gap:12px;justify-content:space-between;align-items:center;padding:11px 16px;border-top:1px solid #202024;font-size:11px;color:var(--muted)}.legend{display:flex;align-items:center;gap:7px}.legendbar{width:150px;height:7px;border-radius:4px;background:linear-gradient(to right,#600814 0%,#d32f39 27.5%,#d8424b 30%,#eb979c 40%,#f1b1b5 42.5%,#6d6d76 45%,#6d6d76 55%,#a2d9b8 57.5%,#33ae61 70%,#159f48 75%,#06421e 100%)}.under{display:flex;justify-content:space-between;gap:15px;margin-top:12px;font-size:11px;color:#797980;line-height:1.6}.under a{color:#b0a696}.notice{background:#201407;border:1px solid #5a3a14;border-radius:10px;padding:10px 13px;margin:12px 0;font-size:12px;color:#f5ddba;line-height:1.6;display:none}.sheet::backdrop{background:#000b;backdrop-filter:blur(5px)}#detailSheet::backdrop{background:transparent;backdrop-filter:none}#detailSheet .sheethead{position:absolute;top:0;right:0;padding:10px 12px 0;background:transparent;justify-content:flex-end;z-index:3}#detailSheet .sheethead h2{display:none}dialog{background:#101012;color:var(--text);border:1px solid #38383e;border-radius:20px;padding:0;width:min(560px,calc(100vw - 24px));max-height:calc(100dvh - 40px);box-shadow:0 30px 150px #000;overflow:hidden;overscroll-behavior:contain}dialog[open]{display:flex;flex-direction:column}.sheethead{display:flex;align-items:center;justify-content:space-between;padding:20px 22px 12px;background:#101012;z-index:2;flex:none}.sheethead h2{font-size:22px;letter-spacing:-.7px;margin:0}.close{padding:4px;min-width:36px;min-height:36px;border:0;background:transparent;font-size:25px}.sheetbody{padding:8px 22px 24px;flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}#detailSheet{height:fit-content}#detailSheet .sheetbody{padding-top:12px;padding-bottom:14px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label,.sectionlabel{color:#aaa7b1;font-size:12px}.field input,.field select{width:100%;height:46px;background:#1b1b20;border:1px solid #35353c;border-radius:10px;padding:9px 11px;color:#f4f4f7;min-width:0;font-size:16px}.field small{color:#85838e;font-size:11px;line-height:1.6}.sectionlabel{display:block;margin:22px 0 10px}.toggles{display:flex;gap:8px;flex-wrap:wrap}.toggle{display:flex;align-items:center;gap:7px;padding:10px 12px;background:#1b1b20;border:1px solid #303037;border-radius:10px;min-height:44px;cursor:pointer;font-size:13px}.toggle input{accent-color:var(--accent);width:16px;height:16px}.sheetfoot{padding:15px 22px;display:flex;justify-content:space-between;gap:10px;border-top:1px solid var(--line);background:#101012;flex:none}.smallbutton{font-size:12px;min-height:36px;padding:6px 10px}.formatbuttons{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.formatbuttons button{font-size:12px}.formatbuttons button.active{border-color:var(--accent);background:#33200d}.formatbuttons b{display:block;font-size:16px;margin-bottom:3px}.tsrange{position:relative}.tsrange input{width:100%}.tstick{position:absolute;left:50%;top:3px;width:2px;height:11px;margin-left:-1px;background:#968a7a;border-radius:1px;pointer-events:none}.preview-image{width:100%;height:auto;max-height:52dvh;object-fit:contain;background:#000;border:1px solid #35353c;border-radius:12px;display:block;margin-top:16px}.export-actions{display:flex;gap:8px;margin-top:14px}.sheetfoot.export-actions{margin-top:0;justify-content:stretch;flex-direction:row}.sheetfoot.export-actions button{flex:1;padding:10px 6px;font-size:13px}.export-actions button{flex:1}.detail-title{display:flex;gap:14px;align-items:center;margin:2px 0 14px;padding-right:46px}.detail-logo{width:58px;height:58px;object-fit:contain;background:#24242a;padding:8px;border-radius:14px;display:block;flex:none;align-self:center}.detail-title h3{font-size:25px;letter-spacing:-1px;margin:0 0 4px}.detail-title p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px}.detail-grid small{display:block;color:var(--muted);font-size:11px;margin-bottom:3px}.detail-grid b{font-size:20px;font-weight:600}.detail-sector{font-size:12px;line-height:1.7;color:var(--muted);margin-top:14px}.detail-sector strong{color:#e6e3ec}.detail-actions{display:flex;gap:8px;margin-top:12px}.detail-actions button{flex:1}.empty{padding:90px 20px;text-align:center}.toast{position:fixed;left:50%;bottom:calc(25px + env(safe-area-inset-bottom));transform:translateX(-50%);background:#ffdfba;color:#2a1806;box-shadow:0 10px 40px #0007;padding:12px 18px;border-radius:12px;z-index:20;max-width:90vw;text-align:center;display:none;font-size:13px}.searchbar{display:flex;gap:8px}.searchbar input{flex:1;min-width:0}.countbadge{background:#7a4a12;border-radius:5px;padding:1px 5px;margin-left:5px;font-size:11px}.busy{animation:pulse 1s infinite alternate}@keyframes pulse{to{opacity:.4}}.data-prose{font-size:12px;color:#b3aa9d;line-height:1.8}.data-prose a{color:#ff9a3c}.data-prose b{color:#fdf3e7}.zoom-info{font-size:11px;color:#99939f;margin:9px 0}.breadcrumbs{display:flex;align-items:center;gap:8px}.breadcrumbs button{font-size:11px;padding:4px 7px;min-height:25px;border-radius:6px}.map-control-mobile{display:none}.bootloader{position:absolute;inset:0;z-index:5;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center}.bootloader[hidden]{display:none}.bootspin{width:34px;height:34px;border-radius:50%;border:3px solid #2c2c33;border-top-color:var(--accent);animation:bootspin .9s linear infinite}@keyframes bootspin{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){.bootspin{animation-duration:2.4s}}.bootloader p{margin:0;font-size:14px}.bootloader .bootsub{color:var(--muted);font-size:12px;line-height:1.6;max-width:340px}
 @media(max-width:700px){.wrap{padding:11px 13px calc(25px + env(safe-area-inset-bottom))}.brand-logo{width:26px;height:37px}.brand .wm{font-size:21px}.brand .wm-dollar{font-size:31px}.brand .byline{font-size:11px}.brand .tagline{font-size:9px;letter-spacing:1.4px}header{gap:8px}.actions{gap:6px}.actions button{padding:9px 11px;font-size:12px}.actions button svg{margin-right:3px;width:15px;height:15px}.intro{margin:7px 0 0}.snapshot{font-size:11px}.toolbar{gap:8px;flex-wrap:wrap}.toolbar label{display:none}.toolbar-left{gap:6px}.toolbar-right{gap:5px}.toolbar .switchline{display:none}.segmented button{font-size:11px;padding:6px 9px}.toolbar button.filterbutton{font-size:12px;padding:7px 11px;min-height:44px}.stats{gap:15px}.stats strong{font-size:18px}.map-heading{padding:12px}.map-heading span{font-size:10px}.map-footer{flex-direction:column;align-items:stretch;gap:9px}.legend{justify-content:center}.legendbar{width:180px}.under{display:block;font-size:10px}.under>span{display:block;margin-top:4px}.zoom-info{font-size:10px}dialog{border-radius:20px 20px 0 0;max-height:90dvh;width:100%;max-width:100%;margin:auto 0 0;bottom:0;position:fixed}.sheethead{padding:18px 18px 10px}.sheetbody{padding:10px 18px 22px}.sheetfoot{padding:14px 18px calc(14px + env(safe-area-inset-bottom))}.formgrid{gap:13px}.map-control-mobile{display:block}.export-actions{flex-direction:column}.hide-mobile{display:none}.snapshot .long{display:none}}
@@ -657,30 +744,43 @@ function scheduleGateSettle(){
 if(settleScheduled)return;settleScheduled=true;
 [250,750,1500,3000,5000,9000].forEach(function(ms){setTimeout(function(){duoGate();vpCheck(ms);},ms);});
 }
-/* Stuck launch viewport recovery (20261110T370000Z): in standalone mode the
-   layout viewport can stay at the folded width (683px) for the whole session
-   after a fresh unfolded open: no resize fires and nothing re-measures, so
-   the page renders at the wrong width with a short map. The tell is the
-   screen itself reporting a wider size than the layout viewport. Recovery
-   escalates: re-apply the viewport meta (forces WebKit to recompute the
-   layout viewport from the current posture), and if the mismatch is still
-   there at the 5s check, reload ONCE per session per build (guarded in
-   sessionStorage, same pattern as the self-update swap). Browser tabs are
-   never touched: split-view and slide-over legitimately report a narrower
-   viewport than the screen, and this only runs in standalone mode. */
+/* Stuck launch viewport recovery (20261110T370000Z; meta re-apply REMOVED
+   20261110T390000Z): in standalone mode the layout viewport can stay at the
+   folded width (683px) for the whole session after a fresh unfolded open:
+   no resize fires and nothing re-measures, so the page renders at the wrong
+   width with a short map. The tell is the screen itself reporting a wider
+   size than the layout viewport. The original recovery re-applied the
+   viewport meta at runtime (append user-scalable=no, restore the original
+   string moments later) to force a recompute. That is gone: even though
+   the restored string was byte-identical, a healthy load that passed
+   through the re-apply came up letterboxed, the whole page inset from the
+   physical edges inside the safe area for the rest of the session, because
+   a runtime-reparsed viewport meta does not keep the parsed-at-load
+   viewport-fit=cover behavior. The document's original meta tag is now the
+   only viewport meta this page ever has; nothing writes to it at runtime.
+   A mismatch that is still there at the 5s check escalates directly to the
+   shared-budget reload, and a fresh document parse applies the original
+   meta with its exact semantics. Browser tabs are never touched:
+   split-view and slide-over legitimately report a narrower viewport than
+   the screen, and this only runs in standalone mode. */
 function vpCheck(ms){
 try{
-if(!(window.navigator&&window.navigator.standalone===true))return;
+/* Standalone detection (20261110T380000Z): navigator.standalone is an
+   iOS-only signal. On Android standalone apps (this foldable included) it
+   is undefined, so the T370000Z check returned immediately and the width
+   recovery never ran on the very device it was written for. Accept the
+   display-mode media query as well, exactly as duoGate does. */
+var _sa=false;
+try{_sa=(window.navigator&&window.navigator.standalone===true)||(window.matchMedia&&window.matchMedia('(display-mode: standalone)').matches);}catch(e){}
+if(!_sa)return;
 var sw=(window.screen&&window.screen.width)||0,iw=window.innerWidth||0;
 if(!sw||!iw||sw-iw<=40)return;
-if(ms>=1500&&!vpNudged){
-vpNudged=true;
-var mv=document.querySelector('meta[name="viewport"]');
-if(mv){var c=mv.getAttribute('content')||'';mv.setAttribute('content',c+',user-scalable=no');setTimeout(function(){try{mv.setAttribute('content',c);}catch(e){}},60);setTimeout(function(){try{mv.setAttribute('content',c);}catch(e){}},450);}
-setTimeout(duoGate,120);
-return;
-}
 if(ms>=5000){
+/* Reload through the head guardian's shared budget (20261110T380000Z) so
+   this mechanism and the boot watchdog can never chain reloads; the old
+   per-mechanism sessionStorage key remains only as a fallback for a
+   document whose guardian somehow did not run. */
+if(typeof window.__sbAutoReload==='function'){window.__sbAutoReload();return;}
 var stamp='';
 try{var bm=document.querySelector('meta[name="build-stamp"]');stamp=bm?(bm.getAttribute('content')||''):'';}catch(e){}
 var key='sbVpReload.'+stamp,done=false;
@@ -790,6 +890,17 @@ try{window.addEventListener('error',function(e){if(!window.__sbBootErr&&e&&e.mes
 function sbBootKey(){try{var bm=document.querySelector('meta[name="build-stamp"]');return 'sbBootReload.'+(bm?(bm.getAttribute('content')||''):'');}catch(e){return 'sbBootReload.';}}
 function sbBootCheck(final){
 if(window.__sbBooted)return;
+/* Recovery routing (20261110T380000Z): reloads spend the head guardian's
+   shared budget, and the failure message is the guardian's self-rendered
+   overlay, because a stall can leave this script's own target elements
+   (#snapshot, #notice) unparsed. The pre-guardian per-key guard and the
+   direct DOM write survive only as fallbacks for a document whose head
+   guardian somehow did not run. */
+if(typeof window.__sbAutoReload==='function'){
+if(!final&&window.__sbAutoReload())return;
+window.__sbShowBootFail();
+return;
+}
 var key=sbBootKey(),done=false;
 try{done=!!(window.sessionStorage&&sessionStorage.getItem(key));}catch(e){done=true;}
 if(!done&&!final){

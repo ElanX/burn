@@ -2,6 +2,10 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T390000Z
+- Cold-open recovery rebuilt: a small guardian at the very top of the page now watches the boot, and every automatic reload shares one budget of two per session, so the app can never reload in a loop. If a boot still cannot finish, the page shows a plain message with a Reload button instead of hanging silently.
+- The wrong-size launch fix no longer rewrites the viewport setting while the page runs (that rewrite is what pulled the layout in from the screen edges). A stuck-size launch now spends one of the budgeted reloads instead, and the layout runs edge to edge again.
+
 ## November 10, 2026 · build 20261110T370000Z
 - Fix for a cold open that could come up squeezed to part of the screen with nothing loaded: when the phone hands the app the wrong screen size at launch, the app now spots the mismatch and corrects it, re-applying the viewport and reloading once if it persists.
 - If the first paint ever stalls, the app now reloads itself once instead of sitting on "Fetching the latest delayed quotes" forever, and says so in plain text if it still cannot load.
