@@ -2,6 +2,10 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T410000Z
+- Quote card in the detail sheet now displays at its fitted width, centered, instead of stretching to the sheet's width.
+- Quote card polish: "Today" now sits tight under the % move as a caption and renders in 50% grey, and the $tockBurn lockup tucks into the bottom-right corner at 50% opacity.
+
 ## November 10, 2026 · build 20261110T400000Z
 - Quote card: the % move now stands alone on its line, with "Today" on its own smaller line underneath and the price below that, all centered on one axis.
 - Quote card: the width now fits the card's content instead of a fixed size, so typical cards are narrower and a little taller. Type sizes are unchanged.
