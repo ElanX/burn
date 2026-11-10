@@ -2,6 +2,10 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T210000Z
+
+- The stats line's flat count no longer carries the "/ unknown" wording; it reads just "N flat" again. Counts are unchanged.
+
 ## November 10, 2026 · build 20261110T200000Z
 
 - Tapping or clicking anywhere on the detail panel besides its buttons now closes it (a drag or scroll on the panel does not).
