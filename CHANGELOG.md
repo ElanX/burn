@@ -2,6 +2,12 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T360000Z
+- Lighter boot: quotes from a cache less than 5 minutes old are used as-is with no new pull (reload, the Refresh button, and pull-to-refresh still force a fresh pull).
+- 52-week data: the same-day saved baseline is used directly, and any new 52-week fetch now covers only the stocks in the current view instead of the whole market.
+- The daily check for newly listed stocks runs at most once a day, a few seconds after the map paints, and never during a first-ever session.
+- Searching Filters for a stock that is not on the map yet now looks it up live and offers to add it, so a brand-new listing can join the map the day it starts trading.
+
 ## November 10, 2026 · build 20261110T350000Z
 
 - The page now lays out at its final size before any data loads: controls, stats, and the map no longer change height or width as quotes arrive.
