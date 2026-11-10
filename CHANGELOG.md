@@ -2,6 +2,11 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T430000Z
+- Cold open, third pass: the layout freeze is reverted, so map size is derived from the live screen on every render, as in the morning builds, instead of being pinned before data loads. A wrong-size launch now corrects on the next render instead of locking in.
+- No reload can fire after the app has booted: the automatic reload refuses once boot completes, and a new version found during an active session now applies between viewings instead of blanking the page mid-view.
+- At phone and foldable widths the side gutters shrink from 13/28 px to 6 px, so controls and map run essentially edge to edge. Desktop keeps its wider margins.
+
 ## November 10, 2026 · build 20261110T410000Z
 - Quote card in the detail sheet now displays at its fitted width, centered, instead of stretching to the sheet's width.
 - Quote card polish: "Today" now sits tight under the % move as a caption and renders in 50% grey, and the $tockBurn lockup tucks into the bottom-right corner at 50% opacity.
