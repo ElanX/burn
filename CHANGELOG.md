@@ -2,6 +2,15 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T140000Z
+
+- Tapping a stock now opens its full details directly. The old first panel still exists as a hover preview on computers with a mouse; on touch devices a tap goes straight to details.
+- The detail sheet is smaller and cleaner: it fits its content with no blank space at the top, the close button floats in the corner, there is no heading, no blur or dim over the map behind it, and the delayed-quotes disclaimer line is gone (the Quotes fetched row stays).
+- Session low and high are now a line scale with the current price marked, in the same style as the 52-week range. The Price × Vol and Volume rows were removed.
+- The index detail view (S&P, Nasdaq Composite, Nasdaq 100) now uses the same sheet and layout as the stock detail.
+- 52-week high/low marks are judged against the quote feed's own 52-week range, captured fresh each session, instead of stored data that could go stale. A stock that set its extreme yesterday no longer shows a false "new high today", and the detail view's range scale uses the same feed range.
+- An open detail view now refreshes itself when live quotes arrive, so the range scales appear as soon as the first quote pull lands.
+
 ## November 10, 2026 · build 20261110T120000Z
 
 - The Nasdaq Composite header figure now calculates its own extended-hours move from its constituent stocks (weighted by market value, the same construction the index itself uses), so it no longer sits on the previous day's move while the S&P and Nasdaq 100 show extended quotes. It is tagged EXT when calculated, and REG when it falls back to the regular close: very early premarket, after 8 PM, and on weekends.
