@@ -2,6 +2,12 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T200000Z
+
+- Tapping or clicking anywhere on the detail panel besides its buttons now closes it (a drag or scroll on the panel does not).
+- The Show dropdown gains Top 250 and Top 1000.
+- Zero-volume guard: a stock that has not traded today (no volume and no extended-hours print in the live quotes) no longer earns 52-week high/low marks, no longer appears on the map under Price × Vol sizing, and no longer shows a daily move. Names that traded, including premarket, are unaffected.
+
 ## November 10, 2026 · build 20261110T170000Z
 
 - Stock detail layout: Daily move is now top-left, Market cap top-right, and Price sits bottom-left directly under the move.
