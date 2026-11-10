@@ -2,6 +2,14 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T270000Z
+
+- Roku fix, second pass: the quote feed was dating its after-hours placeholder with the current day, which let a delisted name's final session pass as a live trade. The extended date now counts only when that quote is actually live, and symbols the feed explicitly reports as having no quote are marked not traded, so delisted names reliably go inert.
+
+## November 10, 2026 · build 20261110T260000Z
+
+- Pinch to zoom on the map (touch devices): pinch 1x to 6x and the map re-lays out sharply at the new size, drag to pan while zoomed, double-tap toggles 1x / 2.5x. New Appearance toggle "Pinch zoom" (on by default) turns it off and resets any zoom.
+
 ## November 10, 2026 · build 20261110T250000Z
 
 - Delisted or halted stocks whose quote feed still serves their last session (Roku was the visible case) are now treated like names that did not trade today: no daily move, no 52-week marks, and no place in the map under Price x Vol sizing, judged by the quote's own last-trade date against the most recent trading day.
