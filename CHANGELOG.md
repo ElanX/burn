@@ -2,6 +2,10 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T300000Z
+
+- The Gradient grouping is now named "Gradient AX". Label only; the layout and saved settings are unchanged.
+
 ## November 10, 2026 · build 20261110T290000Z
 
 - Fixed pinch zoom snapping back to the full view on its own: refreshes and small layout shifts no longer reset a zoom, stray clicks after a pan can no longer be misread as a double-tap, and a new build arriving no longer reloads the page out from under an active zoom.
