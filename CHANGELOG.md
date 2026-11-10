@@ -2,6 +2,10 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T220000Z
+
+- Fixed the near-52-week pill (and the trophy pill) going missing on desktop: the stats row's space-trimming pass could hide them even when there was room. The trimming now only applies at phone widths.
+
 ## November 10, 2026 · build 20261110T210000Z
 
 - The stats line's flat count no longer carries the "/ unknown" wording; it reads just "N flat" again. Counts are unchanged.
