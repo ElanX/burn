@@ -2,6 +2,12 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T460000Z
+- The map now spans the full width of the screen on every device. The controls above it keep their current width.
+- A cold open now lands on the correct layout right away: the first paint waits for the true screen size instead of trusting the size reported at launch.
+- The index boxes at the top are wider, so the session tag fits inside the box next to the value.
+- After hours, the S&P and Nasdaq 100 boxes always show a session tag, like the Nasdaq box already did.
+
 ## November 10, 2026 · build 20261110T450000Z
 - Full width restored at phone and foldable widths: the side gutters are a flat 6 px again, no longer floored by the reported safe-area insets, which on some launches inset the whole app by roughly 80 px and left the right side of the map unfilled.
 
