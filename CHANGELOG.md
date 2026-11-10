@@ -2,6 +2,10 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T440000Z
+- First paint now waits for the screen size to settle: on foldable launches that begin with the wrong posture's size, the app holds on the black boot screen for a fraction of a second and then paints once, at the correct size, instead of painting wrong and snapping.
+- The brand strip at the top is decided by that same settled size, so its space is never reserved when the strip itself is off.
+
 ## November 10, 2026 · build 20261110T430000Z
 - Cold open, third pass: the layout freeze is reverted, so map size is derived from the live screen on every render, as in the morning builds, instead of being pinned before data loads. A wrong-size launch now corrects on the next render instead of locking in.
 - No reload can fire after the app has booted: the automatic reload refuses once boot completes, and a new version found during an active session now applies between viewings instead of blanking the page mid-view.
