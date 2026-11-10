@@ -2,6 +2,11 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T160000Z
+
+- In the stock detail, the session range and 52-week range scales now stack as full-width rows of the same width (the session scale no longer sits squeezed in a half-width column), and the price label on each scale can no longer overlap the "% of range" text at any position.
+- The index detail view (S&P, Nasdaq Composite, Nasdaq 100) now shows the same two range scales: a session range from the day's low and high, and a 52-week range wired from the quote feed, shown when the feed supplies it.
+
 ## November 10, 2026 · build 20261110T140000Z
 
 - Tapping a stock now opens its full details directly. The old first panel still exists as a hover preview on computers with a mouse; on touch devices a tap goes straight to details.
