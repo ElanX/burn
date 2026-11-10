@@ -2,6 +2,12 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T170000Z
+
+- Stock detail layout: Daily move is now top-left, Market cap top-right, and Price sits bottom-left directly under the move.
+- The Daily move value is colored neon green when up and fire truck red when down (grey only at exactly 0%); the index detail's Move value uses the same coloring.
+- Fixed the detail header alignment: the logo no longer inherits the tile logo nudge, so it lines up exactly with the ticker and company name.
+
 ## November 10, 2026 · build 20261110T160000Z
 
 - In the stock detail, the session range and 52-week range scales now stack as full-width rows of the same width (the session scale no longer sits squeezed in a half-width column), and the price label on each scale can no longer overlap the "% of range" text at any position.
