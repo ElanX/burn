@@ -2,6 +2,12 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T120000Z
+
+- The Nasdaq Composite header figure now calculates its own extended-hours move from its constituent stocks (weighted by market value, the same construction the index itself uses), so it no longer sits on the previous day's move while the S&P and Nasdaq 100 show extended quotes. It is tagged EXT when calculated, and REG when it falls back to the regular close: very early premarket, after 8 PM, and on weekends.
+- The map now keeps its own stock list current with no outside help: in the background (first open each day, hourly while open, and on pull to refresh) it checks the full exchange listings and adds anything new, so an IPO joins the map the same day it starts trading. New Nasdaq listings also join the Composite calculation automatically once they trade.
+- A short line in the Nasdaq Composite detail view shows when the figure is calculated from constituents and how much of the index the calculation covers.
+
 ## November 9, 2026 · build 20261110T100000Z
 
 - SpaceX (SPCX) now uses the official SpaceX X logo in white on black, drawn large so it stays recognizable on small tiles.
