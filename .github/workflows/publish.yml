@@ -1,0 +1,10 @@
+name: publish
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  mv:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: git config user.name "ElanX" && git config user.email "ElanX@users.noreply.github.com" && git rm -q index.html && git mv marketheat.html index.html && git add -A && git commit -m "Full-width map, cold-open layout fix, wider index boxes, session tags" && git push
