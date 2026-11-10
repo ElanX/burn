@@ -2,6 +2,10 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T320000Z
+
+- While pinch-zoomed, a floating 1x button (same style as the fullscreen exit button) appears on the map; tapping it returns to the full view.
+
 ## November 10, 2026 · build 20261110T310000Z
 
 - Pinch zoom now goes to 20x (was 6x), so the smallest tiles can be opened up to full readable size.
