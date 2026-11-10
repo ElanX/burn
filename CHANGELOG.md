@@ -2,6 +2,10 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T280000Z
+
+- Pinch zoom is smooth now: no more shaking, ghosting, or the map flashing tiny during zoom. The sharp layout swaps in invisibly once your fingers lift, and panning glides without redrawing until you reach an edge.
+
 ## November 10, 2026 · build 20261110T270000Z
 
 - Roku fix, second pass: the quote feed was dating its after-hours placeholder with the current day, which let a delisted name's final session pass as a live trade. The extended date now counts only when that quote is actually live, and symbols the feed explicitly reports as having no quote are marked not traded, so delisted names reliably go inert.
