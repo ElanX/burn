@@ -2,6 +2,10 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T250000Z
+
+- Delisted or halted stocks whose quote feed still serves their last session (Roku was the visible case) are now treated like names that did not trade today: no daily move, no 52-week marks, and no place in the map under Price x Vol sizing, judged by the quote's own last-trade date against the most recent trading day.
+
 ## November 10, 2026 · build 20261110T240000Z
 
 - Loads are instant now: every open paints immediately from the newest quotes saved on the device, whatever their age, then fresh quotes update the map in place. No more black, empty map while waiting.
