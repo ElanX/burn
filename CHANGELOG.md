@@ -2,6 +2,9 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T450000Z
+- Full width restored at phone and foldable widths: the side gutters are a flat 6 px again, no longer floored by the reported safe-area insets, which on some launches inset the whole app by roughly 80 px and left the right side of the map unfilled.
+
 ## November 10, 2026 · build 20261110T440000Z
 - First paint now waits for the screen size to settle: on foldable launches that begin with the wrong posture's size, the app holds on the black boot screen for a fraction of a second and then paints once, at the correct size, instead of painting wrong and snapping.
 - The brand strip at the top is decided by that same settled size, so its space is never reserved when the strip itself is off.
