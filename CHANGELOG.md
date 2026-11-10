@@ -2,6 +2,10 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T340000Z
+
+- Quote card redesigned: the ticker and the % move are now the same size, only the % number is colored (Today is white), the card height fits its content, and the whole card gets a green or red border matching the day's direction.
+
 ## November 10, 2026 · build 20261110T330000Z
 
 - Stock and index details now open with a shareable quote card (logo, ticker, company, the % move as the headline, price), with Share and Copy buttons that send just that card as an image.
