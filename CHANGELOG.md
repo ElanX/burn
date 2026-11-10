@@ -1,7 +1,11 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 10, 2026 · build 20261110T480000Z
+- Rotating to landscape after loading in portrait no longer leaves a blank band at the top: the portrait brand strip now releases its space the moment the phone turns, and the map resizes to match.
 
+## November 10, 2026 · build 20261110T470000Z
+- The map no longer stops short of the bottom of the screen after rotating the phone or switching back to the app: it re-fits itself as the screen size settles.
 ## November 10, 2026 · build 20261110T460000Z
 - The map now spans the full width of the screen on every device. The controls above it keep their current width.
 - A cold open now lands on the correct layout right away: the first paint waits for the true screen size instead of trusting the size reported at launch.
