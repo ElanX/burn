@@ -2,6 +2,12 @@
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
 
+## November 10, 2026 · build 20261110T330000Z
+
+- Stock and index details now open with a shareable quote card (logo, ticker, company, the % move as the headline, price), with Share and Copy buttons that send just that card as an image.
+- A Robinhood app icon on the detail page opens the stock in Robinhood; the S&P 500 opens VOO and the Nasdaq 100 opens QQQ.
+- Fixed the map rendering shorter for a moment after a pinch zoom; its height now stays put while zoomed.
+
 ## November 10, 2026 · build 20261110T320000Z
 
 - While pinch-zoomed, a floating 1x button (same style as the fullscreen exit button) appears on the map; tapping it returns to the full view.
