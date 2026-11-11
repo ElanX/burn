@@ -1,6 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 11, 2026 · build 20261111T710000Z
+- Stock detail headlines now come from two sources: Nasdaq's article feed joins CNBC, filtered to stories where the stock is the main subject, deduped and sorted newest first, up to five under Latest.
+
+
 ## November 11, 2026 · build 20261111T700000Z
 - Cold open fix: the first quote pull no longer stops early, so the same group of stocks can no longer lose its extended quotes on a fresh open, and a superseded saved quote cache is cleared at open before it can be used.
 - Fullscreen entered after rotating from portrait to landscape now fills to the top of the screen on every orientation path.
