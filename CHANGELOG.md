@@ -1,6 +1,9 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 11, 2026 · build 20261111T620000Z
+- The up and down count pills now lead with 📈 and 📉, filling the blank space left of the number.
+
 ## November 11, 2026 · build 20261111T610000Z
 - Overnight, the map no longer empties out at midnight: names that traded in the most recent regular session stay on the map until pre-market begins at 4 AM, while names that missed that session entirely stay off.
 - Tile sizing now matches the session: Extended sizes by dollar volume traded since the close, Combined adds regular and extended volume together, and Regular is unchanged.
