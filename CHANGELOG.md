@@ -1,7 +1,7 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
-## November 11, 2026 · build 20261111T630000Z
+## November 11, 2026 · build 20261111T660000Z
 - The stock detail sheet now shows the stock's 2 latest CNBC headlines (headline, source, age), fetched only when the sheet opens; tapping one opens the article.
 - Fill mode now fills the whole screen edge to edge; the brand-strip space reserved at the top no longer leaves a black band in fullscreen.
 
