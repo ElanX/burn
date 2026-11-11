@@ -1,6 +1,9 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 10, 2026 · build 20261110T580000Z
+- Berkshire Hathaway is classified under Finance (Property-Casualty Insurers) instead of Uncategorized, and its combined tile now reads BRK.
+
 ## November 10, 2026 · build 20261110T570000Z
 - The small-group name labels drawn over tiles are gone.
 - Under Sector and Industry grouping, groups too small for their own header now fold into a single OTHER group; every stock keeps its own tile.
