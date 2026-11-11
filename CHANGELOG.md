@@ -1,6 +1,11 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+
+## November 11, 2026 · build 20261111T790000Z
+- New debug panel: press and hold the $tockBurn logo to see the running build, how the page loaded, quote pull timing, cache age, and recent errors, with a Copy button for sharing them. The build code also shows at the bottom of the Appearance panel.
+- Fixed a stall on a brand-new install opened after 4 PM or on a non-trading day, where the first screen could hang before any data loaded.
+
 ## November 11, 2026 · build 20261111T770000Z
 - Refresh is faster and quotes-only: it no longer downloads the stock list or index lists, just new quotes.
 - Tiles now paint as soon as the first quote feed delivers the viewed stocks, instead of waiting for every feed to finish; the rest completes in the background.
