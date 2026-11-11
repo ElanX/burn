@@ -1,6 +1,9 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 11, 2026 · build 20261111T730000Z
+- Fixed the second headlines source: the detail sheet now asks Nasdaq directly instead of relying on a redirect, and a source that fails to load is retried on the next open instead of being cached as empty.
+- Headlines are now limited to the last 2 days in both sources; if nothing is that fresh, no Latest section shows.
 ## November 11, 2026 · build 20261111T720000Z
 - Faster loading: the first pull now covers the stocks the current view actually needs (3x the displayed count within the selected index, seeded with today's top dollar-volume names), paints as soon they arrive, and backfills the rest of the universe in the background, redrawing only if the visible set changes.
 - Quotes now come from CNBC first, with TradingView fetched only for stocks CNBC did not cover, and the full TradingView pull still switches on automatically if CNBC coverage drops.
