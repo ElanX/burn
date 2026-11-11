@@ -1,7 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
-## November 11, 2026 · build 20261111T600000Z
+## November 11, 2026 · build 20261111T610000Z
+- Overnight, the map no longer empties out at midnight: names that traded in the most recent regular session stay on the map until pre-market begins at 4 AM, while names that missed that session entirely stay off.
+- Tile sizing now matches the session: Extended sizes by dollar volume traded since the close, Combined adds regular and extended volume together, and Regular is unchanged.
+  ## November 11, 2026 · build 20261111T600000Z
 - The Nasdaq Composite header box now hides when it would show the regular-session move while the S&P box shows extended or futures, so the header never mixes bases.
 ## November 10, 2026 · build 20261110T580000Z
 - Berkshire Hathaway is classified under Finance (Property-Casualty Insurers) instead of Uncategorized, and its combined tile now reads BRK.
