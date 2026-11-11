@@ -1,6 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 11, 2026 · build 20261111T760000Z
+- Fixed quotes not loading: a stalled download could hang the quote pull forever and silently disable Refresh. The pull now times out properly, and Refresh always works.
+- Removed the built-in snapshot entirely. The stock list and index membership are now fetched live, so the map can only ever show real quotes, or a loading state while it fetches them.
+
 ## November 11, 2026 · build 20261111T750000Z
 - New hard reset: press and hold the Refresh button to clear all saved settings and cached data, then load the newest version fresh. A normal tap still just refreshes quotes.
 
