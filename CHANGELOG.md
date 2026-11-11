@@ -1,6 +1,8 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 10, 2026 · build 20261110T530000Z
+- The Robinhood button now opens the Robinhood app directly in Home Screen mode instead of showing the stock's web page in an overlay; if the app is unavailable, it falls back to the web page as before.
 ## November 10, 2026 · build 20261110T510000Z
 - Small groups on the map now show their name as a tag even when they are too small for a full header, so grouped views no longer show large unlabeled areas that look like one big Uncategorized group.
 ## November 10, 2026 · build 20261110T500000Z
