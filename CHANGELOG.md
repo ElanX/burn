@@ -1,6 +1,11 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 11, 2026 · build 20261111T770000Z
+- Refresh is faster and quotes-only: it no longer downloads the stock list or index lists, just new quotes.
+- Tiles now paint as soon as the first quote feed delivers the viewed stocks, instead of waiting for every feed to finish; the rest completes in the background.
+- Warm opens paint the saved quotes immediately without re-reading the full stock list first.
+
 ## November 11, 2026 · build 20261111T760000Z
 - Removed the built-in snapshot entirely: the app now only shows live quotes or a saved cache of them, so it can never paint an old day as if it were current.
 - The stock universe and the S&P 500 and Nasdaq 100 membership lists are now fetched live and saved on the device, refreshed about once a day.
