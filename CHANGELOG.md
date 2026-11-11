@@ -1,7 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
-## November 11, 2026 · build 20261111T740000Z
+## November 11, 2026 · build 20261111T750000Z
+- New hard reset: press and hold the Refresh button to clear all saved settings and cached data, then load the newest version fresh. A normal tap still just refreshes quotes.
+
+ ## November 11, 2026 · build 20261111T740000Z
 - Fixed a freeze when picking a custom color: the color pickers no longer run a full page update for every tiny change while picking, so the page stays responsive and the final color applies as before. The same fix covers the 52-week mark colors.
 
  ## November 11, 2026 · build 20261111T730000Z
