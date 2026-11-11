@@ -1,6 +1,11 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 11, 2026 · build 20261111T690000Z
+- Smarter startup: the map paints saved quotes only when they are under an hour old, skips checking for new data when the market has been closed since the save, and shows theme-colored LOADING tiles instead of yesterday's map on the first open of a trading day.
+- Export image: the bottom strip is now a single line close under the map with the time, view info, and legend together; the delayed quotes and source line is gone.
+- Export size is a 1x to 5x slider, defaulting to 3x; the export page drops its Save PNG button and gains a close button on the actions row.
+
 ## November 11, 2026 · build 20261111T680000Z
 - Overnight quote handling: the app now accepts the finished after-hours segment CNBC serves overnight, and a degraded pull can no longer erase good quotes or be cached as if it were good.
 - Fullscreen fill now reaches the physical edges of the screen in the Home Screen app; the black band at the top is gone.
