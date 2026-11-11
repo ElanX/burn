@@ -1,7 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
-## November 11, 2026 · build 20261111T730000Z
+## November 11, 2026 · build 20261111T740000Z
+- Fixed a freeze when picking a custom color: the color pickers no longer run a full page update for every tiny change while picking, so the page stays responsive and the final color applies as before. The same fix covers the 52-week mark colors.
+
+ ## November 11, 2026 · build 20261111T730000Z
 - Fixed the second headlines source: the detail sheet now asks Nasdaq directly instead of relying on a redirect, and a source that fails to load is retried on the next open instead of being cached as empty.
 - Headlines are now limited to the last 2 days in both sources; if nothing is that fresh, no Latest section shows.
 ## November 11, 2026 · build 20261111T720000Z
