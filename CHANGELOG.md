@@ -1,6 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 11, 2026 · build 20261111T700000Z
+- Cold open fix: the first quote pull no longer stops early, so the same group of stocks can no longer lose its extended quotes on a fresh open, and a superseded saved quote cache is cleared at open before it can be used.
+- Fullscreen entered after rotating from portrait to landscape now fills to the top of the screen on every orientation path.
+
 ## November 11, 2026 · build 20261111T690000Z
 - Smarter startup: the map paints saved quotes only when they are under an hour old, skips checking for new data when the market has been closed since the save, and shows theme-colored LOADING tiles instead of yesterday's map on the first open of a trading day.
 - Export image: the bottom strip is now a single line close under the map with the time, view info, and legend together; the delayed quotes and source line is gone.
