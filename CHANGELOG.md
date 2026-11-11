@@ -1,6 +1,9 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 11, 2026 · build 20261111T630000Z
+- The stats counts no longer reserve blank space: every count sizes to its own digits, in the direction, near, and new high/low pills on both maps.
+
 ## November 11, 2026 · build 20261111T620000Z
 - The up and down count pills now lead with 📈 and 📉, filling the blank space left of the number.
 
@@ -18,6 +21,7 @@ Every published build of $tockBurn (https://elanx.github.io/burn/), newest first
 
 ## November 10, 2026 · build 20261110T560000Z
 - The Robinhood button is back to the plain direct link in every mode; the middle page detour was removed.
+## November 11, 2026 · build 20261111T630000Z
 - In a Safari tab on the folded phone, the page no longer settles on the narrow launch width, and in folded portrait the control rows keep clear of the floating widget while the map stays full width.
 
 ## November 10, 2026 · build 20261110T550000Z
