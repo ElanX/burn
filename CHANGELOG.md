@@ -1,6 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 10, 2026 · build 20261110T560000Z
+- The Robinhood button is back to the plain direct link in every mode; the middle page detour was removed.
+- In a Safari tab on the folded phone, the page no longer settles on the narrow launch width, and in folded portrait the control rows keep clear of the floating widget while the map stays full width.
+
 ## November 10, 2026 · build 20261110T550000Z
 - The Robinhood button in Home Screen mode now goes through a small middle page with a big Open in Robinhood button, giving iOS the real tap it needs to hand you to the app; the earlier direct app-scheme attempt was removed.
 
