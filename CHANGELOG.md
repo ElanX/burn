@@ -1,6 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 12, 2026 · build 20261112T810000Z
+- First open of the day fixed: the overnight map now paints within seconds, honestly labeled with its real fetched time, instead of a long blank wait. Stocks that traded last session keep their move before the open instead of showing dashes, and a morning quote pull can no longer spiral: it has a hard 90 second total budget, with anything left over finishing in the background.
+- Debug panel: added a short event log (opens, paints, pull starts and ends) that is included in Copy, and the first-paint line now plainly says how many stocks it waited for.
+
 ## November 11, 2026 · build 20261111T800000Z
 - Share and Refresh no longer stay greyed out during a long quote pull: they come back as soon as the first results paint, a stuck pull is force-cleared after 30 seconds, and Refresh can interrupt a pull still running in the background instead of sitting disabled.
 - Export images now follow the same index rules as the app: the Nasdaq Composite box is left out whenever the app hides it (for example when it shows the regular close while everything else is extended), so the tags in an image always match the screen.
