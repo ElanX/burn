@@ -1,6 +1,9 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 12, 2026 · build 20261112T830000Z
+- Debug panel honesty fix: the first-paint figure now reports the first paint of any kind, labeled (for example "first paint 0.4s · saved cache · first live paint 17m 16s") instead of quietly measuring only the first live paint, and durations that span the app being suspended now show the split, such as "1013s wall · 95s active · 918s suspended", instead of one misleading total.
+
 ## November 12, 2026 · build 20261112T820000Z
 - Morning quote pulls fixed: a slow pre-market feed could never finish inside the pull's time budget, so every pull failed and retried. The first feed to deliver now completes the pull, finished results are kept instead of discarded, the time budget tracks the real clock even when iOS suspends the app, and automatic retries back off (60 seconds, doubling to 10 minutes) instead of hammering. Tapping Refresh still tries right away.
 - Debug log: pulls now record which stage they reached, and a pull cut short by the app closing is marked interrupted on the next open.
