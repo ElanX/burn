@@ -1,6 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 12, 2026 · build 20261112T840000Z
+- Quote status moved into the map's heading row, between the trophy button and the fullscreen button: the time the on-screen quotes are from and how many there are, or the live received count while a pull is running. The flat count and the period/session label came out of that row to make room.
+- If the quote feed cannot be reached, a small floating alert now appears over the map ("Can't reach quote feed · retrying · showing 7:20 AM") so the failure is visible without scrolling; it clears on the next successful pull.
+
 ## November 12, 2026 · build 20261112T830000Z
 - Debug panel honesty fix: the first-paint figure now reports the first paint of any kind, labeled (for example "first paint 0.4s · saved cache · first live paint 17m 16s") instead of quietly measuring only the first live paint, and durations that span the app being suspended now show the split, such as "1013s wall · 95s active · 918s suspended", instead of one misleading total.
 
