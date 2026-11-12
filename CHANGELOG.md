@@ -1,6 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 11, 2026 · build 20261111T800000Z
+- Share and Refresh no longer stay greyed out during a long quote pull: they come back as soon as the first results paint, a stuck pull is force-cleared after 30 seconds, and Refresh can interrupt a pull still running in the background instead of sitting disabled.
+- Export images now follow the same index rules as the app: the Nasdaq Composite box is left out whenever the app hides it (for example when it shows the regular close while everything else is extended), so the tags in an image always match the screen.
+- Portrait is now the default export shape.
 
 ## November 11, 2026 · build 20261111T790000Z
 - New debug panel: press and hold the $tockBurn logo to see the running build, how the page loaded, quote pull timing, cache age, and recent errors, with a Copy button for sharing them. The build code also shows at the bottom of the Appearance panel.
