@@ -1,6 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 12, 2026 · build 20261112T820000Z
+- Morning quote pulls fixed: a slow pre-market feed could never finish inside the pull's time budget, so every pull failed and retried. The first feed to deliver now completes the pull, finished results are kept instead of discarded, the time budget tracks the real clock even when iOS suspends the app, and automatic retries back off (60 seconds, doubling to 10 minutes) instead of hammering. Tapping Refresh still tries right away.
+- Debug log: pulls now record which stage they reached, and a pull cut short by the app closing is marked interrupted on the next open.
+
 ## November 12, 2026 · build 20261112T810000Z
 - First open of the day fixed: the overnight map now paints within seconds, honestly labeled with its real fetched time, instead of a long blank wait. Stocks that traded last session keep their move before the open instead of showing dashes, and a morning quote pull can no longer spiral: it has a hard 90 second total budget, with anything left over finishing in the background.
 - Debug panel: added a short event log (opens, paints, pull starts and ends) that is included in Copy, and the first-paint line now plainly says how many stocks it waited for.
