@@ -1,6 +1,12 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 13, 2026 · build 20261113T930000Z
+- The live received count shown while quotes load now counts quotes for tracked stocks only, so it can no longer run past the real stock count.
+- The fallback market-wide quote scan now covers stocks only, which makes degraded pulls faster and keeps funds and other instruments out of the results.
+- The market-cap top-up step is now aware of the active move and direction filters: it pulls a larger pool when a filter discards many names, and it no longer runs when the pool is already close to the target.
+- Every run of the fallback scan is now recorded in the debug log with its size.
+
 ## November 13, 2026 · build 20261113T920000Z
 - The debug page now shows storage numbers per storage type (origin usage and quota where the browser reports them, local storage broken down by key, the larger store by item), and a failed save now logs exactly which store and item failed, so a storage-full message can be pinned to its cause.
 
