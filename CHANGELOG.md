@@ -1,6 +1,9 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 13, 2026 · build 20261113T920000Z
+- The debug page now shows storage numbers per storage type (origin usage and quota where the browser reports them, local storage broken down by key, the larger store by item), and a failed save now logs exactly which store and item failed, so a storage-full message can be pinned to its cause.
+
 ## November 13, 2026 · build 20261113T910000Z
 - Fixed the early repaint on reopen: reopening now redraws once the first traded-value slice lands, instead of waiting for all ~6,000 quotes.
 - A new day's first open shows nothing stale: the prior set is fetched first behind the loading screen and the first paint arrives with fresh numbers.
