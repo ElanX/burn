@@ -1,6 +1,9 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 12, 2026 · build 20261112T890000Z
+- All displayed times are New York time: the heading quote time and the feed alert now read "8:23 PM ET", and the debug panel uses ET too, so the app reads the same in any time zone. Market decisions (session hours, holidays, the closed-stretch check) already ran on New York time and were re-verified in other zones.
+
 ## November 12, 2026 · build 20261112T880000Z
 - Late-night opens no longer re-pull stock quotes when the evening's final set already pulled successfully and no session has run since; there is nothing newer to fetch. The index futures still refresh on every open, at any hour.
 - If that final set had only partially landed, opening the app pulls quotes as usual.
@@ -9,7 +12,7 @@ Every published build of $tockBurn (https://elanx.github.io/burn/), newest first
 - Pulls now refresh the stocks on screen first and update them in place, so stale quotes leave the screen within seconds; the full pull and its re-rank paint follow behind.
 - If a pull is cut short while the app is in the background, coming back to the app starts a fresh pull immediately instead of waiting out the retry delay.
 - The CNBC script feed (down at CNBC's end today) is no longer tried on every pull; it runs only as a fallback when the main feed falls short.
-- Faster starts: the first pull now begins while the app is still opening, the traded-value seed is reused between pulls instead of refetched, and connections to the feed hosts warm up during load.
+ Faster starts: the first pull now begins while the app is still opening, the traded-value seed is reused between pulls instead of refetched, and connections to the feed hosts warm up during load.
 
 ## November 12, 2026 · build 20261112T850000Z
 - The app's two big saved items, the quote cache and the stock list, moved to the browser's larger storage system, so the "Browser storage is full or unavailable" message should stop appearing in normal use. Saved data already on a device migrates automatically on first open.
