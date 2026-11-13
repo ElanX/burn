@@ -1,6 +1,12 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 12, 2026 · build 20261112T860000Z
+- Pulls now refresh the stocks on screen first and update them in place, so stale quotes leave the screen within seconds; the full pull and its re-rank paint follow behind.
+- If a pull is cut short while the app is in the background, coming back to the app starts a fresh pull immediately instead of waiting out the retry delay.
+- The CNBC script feed (down at CNBC's end today) is no longer tried on every pull; it runs only as a fallback when the main feed falls short.
+- Faster starts: the first pull now begins while the app is still opening, the traded-value seed is reused between pulls instead of refetched, and connections to the feed hosts warm up during load.
+
 ## November 12, 2026 · build 20261112T850000Z
 - The app's two big saved items, the quote cache and the stock list, moved to the browser's larger storage system, so the "Browser storage is full or unavailable" message should stop appearing in normal use. Saved data already on a device migrates automatically on first open.
 
