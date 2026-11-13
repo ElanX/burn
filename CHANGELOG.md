@@ -1,6 +1,11 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 13, 2026 · build 20261113T940000Z
+- Quotes for the stocks on screen now refresh first on every open, including the first load of the day, so the numbers in front of you go live before anything else is pulled.
+- The traded-value pull now goes deeper on its own when a move filter discards many names, and the first full redraw happens as soon as enough qualifying stocks have landed instead of waiting for a later stage.
+- The market-cap top-up now runs after the first redraw, so it can no longer delay the first live paint on large views.
+
 ## November 13, 2026 · build 20261113T930000Z
 - The live received count shown while quotes load now counts quotes for tracked stocks only, so it can no longer run past the real stock count.
 - The fallback market-wide quote scan now covers stocks only, which makes degraded pulls faster and keeps funds and other instruments out of the results.
