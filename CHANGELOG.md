@@ -1,6 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 12, 2026 · build 20261112T880000Z
+- Late-night opens no longer re-pull stock quotes when the evening's final set already pulled successfully and no session has run since; there is nothing newer to fetch. The index futures still refresh on every open, at any hour.
+- If that final set had only partially landed, opening the app pulls quotes as usual.
+
 ## November 12, 2026 · build 20261112T860000Z
 - Pulls now refresh the stocks on screen first and update them in place, so stale quotes leave the screen within seconds; the full pull and its re-rank paint follow behind.
 - If a pull is cut short while the app is in the background, coming back to the app starts a fresh pull immediately instead of waiting out the retry delay.
