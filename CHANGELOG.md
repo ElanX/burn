@@ -1,6 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 13, 2026 · build 20261113T900000Z
+- Pulls now run in strict phases with no repeats: the visible stocks first, then today's top traded-value names in two slices, then the 3x predicted set, then the rest of the market. A stock already fetched in a pull is never fetched again in that same pull.
+- With fewer than 300 stocks displayed, the first re-ranked paint now lands after the first traded-value slice, about 150 to 200 quotes for a Top 100, instead of waiting for the full priority set.
+
 ## November 12, 2026 · build 20261112T890000Z
 - All displayed times are New York time: the heading quote time and the feed alert now read "8:23 PM ET", and the debug panel uses ET too, so the app reads the same in any time zone. Market decisions (session hours, holidays, the closed-stretch check) already ran on New York time and were re-verified in other zones.
 
