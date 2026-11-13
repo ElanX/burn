@@ -1,6 +1,11 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 13, 2026 · build 20261113T910000Z
+- Fixed the early repaint on reopen: reopening now redraws once the first traded-value slice lands, instead of waiting for all ~6,000 quotes.
+- A new day's first open shows nothing stale: the prior set is fetched first behind the loading screen and the first paint arrives with fresh numbers.
+- Pull order finished out: after the top 400 by traded value, a market-cap top-up runs only when the volume pool falls short, then the 3x set, then the rest of the selected index, then the full market. The debug log now records every repaint and redraw with its reason.
+
 ## November 13, 2026 · build 20261113T900000Z
 - Pulls now run in strict phases with no repeats: the visible stocks first, then today's top traded-value names in two slices, then the 3x predicted set, then the rest of the market. A stock already fetched in a pull is never fetched again in that same pull.
 - With fewer than 300 stocks displayed, the first re-ranked paint now lands after the first traded-value slice, about 150 to 200 quotes for a Top 100, instead of waiting for the full priority set.
