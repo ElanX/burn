@@ -1,6 +1,9 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 12, 2026 · build 20261112T850000Z
+- The app's two big saved items, the quote cache and the stock list, moved to the browser's larger storage system, so the "Browser storage is full or unavailable" message should stop appearing in normal use. Saved data already on a device migrates automatically on first open.
+
 ## November 12, 2026 · build 20261112T840000Z
 - Quote status moved into the map's heading row, between the trophy button and the fullscreen button: the time the on-screen quotes are from and how many there are, or the live received count while a pull is running. The flat count and the period/session label came out of that row to make room.
 - If the quote feed cannot be reached, a small floating alert now appears over the map ("Can't reach quote feed · retrying · showing 7:20 AM") so the failure is visible without scrolling; it clears on the next successful pull.
