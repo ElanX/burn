@@ -1,6 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 13, 2026 · build 20261113T950000Z
+- The "browser storage is full or unavailable" message now appears only when a save truly cannot be written: saves are written one at a time, and a failed save is retried once before anything is reported.
+- Storage write failures in the debug log now name the actual error, so a transient hiccup can be told apart from a real problem.
+
 ## November 13, 2026 · build 20261113T940000Z
 - Quotes for the stocks on screen now refresh first on every open, including the first load of the day, so the numbers in front of you go live before anything else is pulled.
 - The traded-value pull now goes deeper on its own when a move filter discards many names, and the first full redraw happens as soon as enough qualifying stocks have landed instead of waiting for a later stage.
