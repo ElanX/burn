@@ -1,6 +1,11 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 16, 2026 · build 20261116T960000Z
+- Session buttons now show the day they are displaying when it is not today: Regular reads "Regular · Fri" on a Monday morning before the open, and on weekends all three sessions carry the day.
+- Combined is unavailable before the 9:30 open, when it would only duplicate Extended; if Combined was selected, Extended is shown in its place until the open.
+- Fresh installs and resets now start with pinch zoom off, prices shown on tiles, and flat movers in grey.
+
 ## November 13, 2026 · build 20261113T950000Z
 - The "browser storage is full or unavailable" message now appears only when a save truly cannot be written: saves are written one at a time, and a failed save is retried once before anything is reported.
 - Storage write failures in the debug log now name the actual error, so a transient hiccup can be told apart from a real problem.
