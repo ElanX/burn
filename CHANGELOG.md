@@ -1,6 +1,9 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 16, 2026 · build 20261116T990000Z
+- Fixed the bottom edges of the Gainers and Losers groups not lining up: the gainers side no longer runs lower than the losers side, and both groups now end at the same bottom edge of the map.
+
 ## November 16, 2026 · build 20261116T980000Z
 - Fixed the Gainers and Losers tile tops not lining up: both sides now start their tiles at exactly the same height, whether the gainers side is a narrow column or half the map.
 - A group label that cannot fit in full in its header bar now shows as much of the word as fits (GAIN, GAI, ...) instead of disappearing.
