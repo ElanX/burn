@@ -1,6 +1,9 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 16, 2026 · build 20261116T1000000Z
+- Fixed the last bottom-alignment gap: when a stock in the map is exactly flat, it now forms its own full-height column beside Gainers and Losers instead of a thin strip underneath them, so every group fills the whole height of the map and no pale band appears along the bottom.
+
 ## November 16, 2026 · build 20261116T990000Z
 - Fixed the bottom edges of the Gainers and Losers groups not lining up: the gainers side no longer runs lower than the losers side, and both groups now end at the same bottom edge of the map.
 
