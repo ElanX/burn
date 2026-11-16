@@ -1,6 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 16, 2026 · build 20261116T970000Z
+- The Gainers header bar no longer disappears when the gainers side of the map is narrow: the bar stays in place so its tiles line up with the Losers side, and only the label is left out when the word itself cannot fit.
+- The Gainers label no longer shortens to "G..." on wide screens when the full word fits in its bar.
+
 ## November 16, 2026 · build 20261116T960000Z
 - Session buttons now show the day they are displaying when it is not today: Regular reads "Regular · Fri" on a Monday morning before the open, and on weekends all three sessions carry the day.
 - Combined is unavailable before the 9:30 open, when it would only duplicate Extended; if Combined was selected, Extended is shown in its place until the open.
