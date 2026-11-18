@@ -1,6 +1,9 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 17, 2026 · build 20261117T1040000Z
+- Found and fixed the real cause of the slow open: drawing the map was recomputing the market session for every stock from scratch, which took over ten seconds before the first frame could appear. The map now draws in well under a second, and the debug log adds a step-by-step boot timeline so any future slowdown names the exact step.
+
 ## November 17, 2026 · build 20261117T1030000Z
 - Fixed the slow evening open properly: the map's first frame no longer waits behind startup chores. Logo loading and other background setup now begin only after the first frame is on screen, and the logo work runs in small batches so it can never hold the screen up again.
 
