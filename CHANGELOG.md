@@ -1,6 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 17, 2026 · build 20261117T1020000Z
+- Fixed a slow first draw on evening opens: the map now paints before anything else loads, instead of waiting behind the app's logo data and other startup work, and the debug panel's first-paint time now measures the frame actually seen on screen.
+- The evening index-futures refresh is faster and no longer holds up the header: each index updates as its numbers land, and the refresh gives up within a few seconds if the feed hangs.
+
 ## November 17, 2026 · build 20261117T1010000Z
 - Opens and view changes are fast again: every quote request now has a hard time limit, and a download that stalls is cut and restarted instead of hanging until the next open.
 - TradingView now leads the quote pulls while CNBC is having problems, with CNBC as the backup; once CNBC responds cleanly twice in a row it automatically takes the lead again.
