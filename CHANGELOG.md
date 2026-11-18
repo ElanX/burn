@@ -1,6 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 17, 2026 · build 20261117T1010000Z
+- Opens and view changes are fast again: every quote request now has a hard time limit, and a download that stalls is cut and restarted instead of hanging until the next open.
+- TradingView now leads the quote pulls while CNBC is having problems, with CNBC as the backup; once CNBC responds cleanly twice in a row it automatically takes the lead again.
+
 ## November 16, 2026 · build 20261116T1000000Z
 - Fixed the last bottom-alignment gap: when a stock in the map is exactly flat, it now forms its own full-height column beside Gainers and Losers instead of a thin strip underneath them, so every group fills the whole height of the map and no pale band appears along the bottom.
 
