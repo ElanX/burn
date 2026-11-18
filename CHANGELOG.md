@@ -1,6 +1,9 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 17, 2026 · build 20261117T1030000Z
+- Fixed the slow evening open properly: the map's first frame no longer waits behind startup chores. Logo loading and other background setup now begin only after the first frame is on screen, and the logo work runs in small batches so it can never hold the screen up again.
+
 ## November 17, 2026 · build 20261117T1020000Z
 - Fixed a slow first draw on evening opens: the map now paints before anything else loads, instead of waiting behind the app's logo data and other startup work, and the debug panel's first-paint time now measures the frame actually seen on screen.
 - The evening index-futures refresh is faster and no longer holds up the header: each index updates as its numbers land, and the refresh gives up within a few seconds if the feed hangs.
