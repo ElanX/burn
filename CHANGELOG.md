@@ -1,6 +1,9 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 19, 2026 · build 20261119T1000000Z
+- New "Add to view" checkbox in Filters, under Search: with it on, searching a ticker that is not in the selected index adds it to that view, including ETFs and brand-new listings that are not in the stock universe yet. Added tickers get a + badge, quote and rank like regular members, and can be removed from their detail sheet.
+
 ## November 17, 2026 · build 20261117T1040000Z
 - Found and fixed the real cause of the slow open: drawing the map was recomputing the market session for every stock from scratch, which took over ten seconds before the first frame could appear. The map now draws in well under a second, and the debug log adds a step-by-step boot timeline so any future slowdown names the exact step.
 
