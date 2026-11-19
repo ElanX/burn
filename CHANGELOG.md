@@ -1,6 +1,9 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 19, 2026 · build 20261119T1300000Z
+- Reworked "Add to view" search: the search box is no longer cleared on OK, and while the box is checked the search text never narrows the map, so the full index always shows. When the searched ticker is one you added, a "Remove from this view" button appears in Filters next to the checkbox.
+
 ## November 19, 2026 · build 20261119T1200000Z
 - Fixed "Add to view" getting stuck when re-adding a ticker that was already added: the search text stayed as a filter and collapsed the map to one tile. In add mode the search now always clears on confirm, and closing Filters clears a leftover search for tickers already in the view.
 
