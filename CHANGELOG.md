@@ -1,6 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 19, 2026 · build 20261119T1500000Z
+- Filters reworked: the "Add to view" checkbox is gone and Search is a plain filter again. A new "Add ticker" field adds a stock to the current view as soon as you pick it, and an "Added" list shows the tickers added to the current view, each with an × to remove it.
+- "Grey within" now defaults to Off, so tiles take their real color at any nonzero move.
+
 ## November 19, 2026 · build 20261119T1300000Z
 - Reworked "Add to view" search: the search box is no longer cleared on OK, and while the box is checked the search text never narrows the map, so the full index always shows. When the searched ticker is one you added, a "Remove from this view" button appears in Filters next to the checkbox.
 
