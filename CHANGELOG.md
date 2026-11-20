@@ -1,6 +1,10 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 20, 2026 · build 20261120T0200000Z
+- Sector and industry group headers now show the group's % move (cap-weighted across the whole group in the current view) where the full label fits.
+- Drilling into one sector or industry now shows the whole group instead of stopping at the Top tiles count, and an export of a single group is titled with the group's emoji, name, and %.
+
 ## November 19, 2026 · build 20261119T1600000Z
 - Added stocks no longer carry a "+" badge on their map tiles; they render exactly like native tiles.
 
