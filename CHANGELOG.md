@@ -1,6 +1,9 @@
 # $tockBurn changelog
 
 Every published build of $tockBurn (https://elanx.github.io/burn/), newest first. Each entry is dated and keyed to the build's in-app stamp; older entries also carry the git commit hash. Going forward, an entry is added in the same commit as the build it describes. Infrastructure-only commits (deployment retries, plumbing) are not listed.
+## November 27, 2026 · build 20261127T0100000Z
+- Combined share-class tiles (like Berkshire) now take their session and 52-week ranges from the same class as the displayed price (BRK.B), so the range positions and near-high/low marks are right instead of mixing in the other class's prices.
+
 ## November 23, 2026 · build 20261123T0100000Z
 - Bad-print guard: a quote wildly out of line with its own previous close (like this morning's x100 prints on SNDK, LITE, and STX) is now corrected when it is a cents-scaled value, or held at its last good value and cross-checked against the other feed, so one bad print can no longer blow up a tile or the index header.
 
